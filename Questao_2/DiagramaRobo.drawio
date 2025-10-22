@@ -1,19 +1,19 @@
 <mxfile host="65bd71144e">
     <diagram id="7U2jy-Ix0gTTgnbHscNo" name="Page-1">
-        <mxGraphModel dx="440" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="398" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Robo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="2" value="Robo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="180" y="220" width="290" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="- linha: int&lt;br/&gt;- coluna: int&lt;br/&gt;- passo: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                <mxCell id="3" value="- linha: int&lt;br&gt;- coluna: int&lt;br&gt;- passo: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=default;" parent="2" vertex="1">
                     <mxGeometry y="26" width="290" height="54" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2">
+                <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="2" vertex="1">
                     <mxGeometry y="80" width="290" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="+ Robo(linhaInicial: int, colunaInicial: int, passo: int)&lt;br&gt;+ mostrarPosicaoAtual()&lt;br&gt;+ andarFrente(maxLinha: int)&lt;br&gt;+ andarTras()&lt;br&gt;+ andarDireita(maxColuna: int)&lt;br&gt;+ andarEsquerda()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                <mxCell id="5" value="+ Robo(linhaInicial: int, colunaInicial: int, passo: int)&lt;br&gt;+ mostrarPosicaoAtual()&lt;br&gt;+ andarFrente(maxLinha: int)&lt;br&gt;+ andarTras()&lt;br&gt;+ andarDireita(maxColuna: int)&lt;br&gt;+ andarEsquerda()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=default;" parent="2" vertex="1">
                     <mxGeometry y="88" width="290" height="112" as="geometry"/>
                 </mxCell>
             </root>
