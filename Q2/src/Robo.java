@@ -1,4 +1,3 @@
-package Questao_2;
 public class Robo{
     private int linha;
     private int coluna;

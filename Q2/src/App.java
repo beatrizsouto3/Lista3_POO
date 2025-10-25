@@ -1,7 +1,6 @@
-package Questao_2;
 import java.util.Scanner;
 
-public class PrincipalRobo{ 
+public class App{ 
     private static final int TAMANHO_LINHA = 20;
     private static final int TAMANHO_COLUNA = 40;
 
