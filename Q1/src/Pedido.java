@@ -46,7 +46,7 @@ public class Pedido{
     }
 
     public void confirmarPagamento(String cartao) {
-        this.cartaoCredito = cartao; // Armazena o cartão (não seguro na vida real)
+        this.cartaoCredito = cartao;
         this.status = StatusPedido.CONFIRMADO;
     }
 
@@ -73,7 +73,6 @@ public class Pedido{
             sb.append("Entrega Prevista: ").append(dataHoraEntregaPrevista.format(FORMATADOR)).append("\n");
         }
         if (cartaoCredito != null && !cartaoCredito.isEmpty()) {
-            // Apenas para fins de teste, mostra os últimos 4 dígitos
             String cartaoMascarado = "**** **** **** " + cartaoCredito.substring(Math.max(0, cartaoCredito.length() - 4));
             sb.append("Cartão: ").append(cartaoMascarado).append("\n");
         }
