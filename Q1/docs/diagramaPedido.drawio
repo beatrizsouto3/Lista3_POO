@@ -1,0 +1,34 @@
+<mxfile host="65bd71144e">
+    <diagram id="L9IogUwOp3uIC9WxBMBJ" name="Page-1">
+        <mxGraphModel dx="1061" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;StatusPedido&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="400" width="140" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="EM_ABERTO &lt;br&gt;CONFIRMADO &lt;br&gt;ENTREGUE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="2">
+                    <mxGeometry y="40" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Pedido" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="20" width="480" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="- codigoPedido: int&lt;br&gt;- dataHoraCompra: LocalDateTime&lt;br&gt;- enderecoEntrega: String&lt;br&gt;quantidadeBotijoes: int&lt;br&gt;- valorTotal: double&lt;br&gt;- dataHoraEntregaPrevista: LocalDateTime&lt;br&gt;- cartaoCredito: String&lt;br&gt;- status: StatusPedido&lt;br&gt;&lt;u&gt;- FORMATADOR: DateTimeFormatter&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="4">
+                    <mxGeometry y="26" width="480" height="144" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="4">
+                    <mxGeometry y="170" width="480" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="+ Pedido(codigo: int, dataHoraCompra: LocalDateTime, enderecoEntrega: String, quantidadeBotijoes: int)&lt;br&gt;+ calcularValorTotal(preco: double): void&lt;br&gt;+ calcularHoraEntrega(): void&lt;br&gt;+ confirmarPagamento(cartao: String): void&lt;br&gt;+ confirmarEntrega(): void&lt;br&gt;+toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="4">
+                    <mxGeometry y="180" width="480" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="2">
+                    <mxGeometry x="-1" y="3" relative="1" as="geometry">
+                        <mxPoint x="530" y="360" as="sourcePoint"/>
+                        <mxPoint x="690" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
