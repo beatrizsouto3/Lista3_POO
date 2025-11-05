@@ -102,7 +102,6 @@ public class Game {
     }
 
     private int rolarDados() {
-        // Pausa para suspense
         try { Thread.sleep(1000); } catch (InterruptedException e) {}
         
         int valorDado1 = dado1.rolar();
